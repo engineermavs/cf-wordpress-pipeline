@@ -4,7 +4,7 @@ pipeline {
 	
 	environment {
       bucketName = "testbucket-mavs"
-			stackFileName = "wp.yaml"
+			stackFileName = "wordPress.yaml"
     }
 	
 	parameters { 
