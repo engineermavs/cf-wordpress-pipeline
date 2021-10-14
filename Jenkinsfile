@@ -3,8 +3,10 @@ pipeline {
     agent any
 	
 	environment {
-      bucketName = "testbucket-mavs"
-			stackFileName = "wordPress.yaml"
+	AWS_CRED = 'cloud_user'
+        AWS_REGION = 'us-east-1'	
+      	bucketName = "testbucket-mavs"
+	stackFileName = "wordPress.yaml"
     }
 	
 	parameters { 
