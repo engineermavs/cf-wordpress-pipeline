@@ -29,7 +29,7 @@ pipeline {
      
 		stage("Push template to S3") {
 			steps {
-				uploadFiles(stackFileName: "${stackFileName}", workingDir: "${env.WORKSPACE}/stack_templates", bucketName: "${bucketName}")
+				uploadFiles(stackFileName: "${stackFileName}", workingDir: "${env.WORKSPACE}/stack-templates", bucketName: "${bucketName}")
 			}
 		}
 		stage('Deploy Stack') {                  
