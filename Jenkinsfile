@@ -6,7 +6,6 @@ pipeline {
 	AWS_CRED = 'cloud_user'
         AWS_REGION = 'us-east-1'	
       	bucketName = "testbucket-mavs"
-	stackName = "myStack-mavs"
 	stackFileName = "wordPress.yaml"
     }
 	
@@ -18,7 +17,7 @@ pipeline {
 			)
 		string(
 			name: 'stackName', 
-			defaultValue: 'myStack', 
+			defaultValue: 'myStack-mavs', 
 			description: 'Please insert the stack name'
 			)
 	}
