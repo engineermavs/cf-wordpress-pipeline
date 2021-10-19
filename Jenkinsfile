@@ -6,6 +6,7 @@ pipeline {
 	AWS_CRED = 'cloud_user'
         AWS_REGION = 'us-east-1'	
       	bucketName = "testbucket-mavs"
+	stackName = "stack-mavs"
 	stackFileName = "wordPress.yaml"
     }
 	
