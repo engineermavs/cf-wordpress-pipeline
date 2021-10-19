@@ -7,6 +7,9 @@ pipeline {
         AWS_REGION = 'us-east-1'	
       	bucketName = "testbucket-mavs"
 	stackFileName = "wordPress.yaml"
+	VpcId = "vpc-053b338aed86f79f5"
+	PubSub1 = "subnet-0d918b2afdb1a9bea"
+	PubSub2 = "subnet-004cd798e13e870d0"
     }
 	
 	parameters { 
