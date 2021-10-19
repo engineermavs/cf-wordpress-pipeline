@@ -34,7 +34,7 @@ pipeline {
 		}
 		stage('Deploy Stack') {                  
                 steps {
-                    deployStack(stackName: "${stackName}", bucketName: "${bucketName}", stackFileName: "${stackFileName}", env: "${ENV}")
+                    deployStack(stackName: "${stackName}", bucketName: "${bucketName}", stackFileName: "${stackFileName}", env: "${ENV}", VpcId: "${VpcId}", PublicSubnet1: "${PubSub1}", PublicSubnet2: "${PubSub2}")
                 }
             }
 		
